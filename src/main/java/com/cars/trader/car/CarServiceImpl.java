@@ -41,6 +41,12 @@ public class CarServiceImpl implements CarService {
         return mapCarsToCarResponseDTOs(carList);
     }
 
+    /**
+     * Adds a new car to the repository.
+     *
+     * @param carDTO the DTO containing car data to be added.
+     * @return the CarResponseDTO representing the added car.
+     */
     @Override
     public CarResponseDTO addCar(CarDTO carDTO) {
         Car car = convertToEntity(carDTO);
